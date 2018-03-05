@@ -4,11 +4,11 @@ $(document).ready(function(){
         result = result.result;
         var data = result.XXBTZEUR;
         var cValues = data.c;
-        var requiredVal = cValues[0].toFixed(2);
+        var requiredVal = cValues[0];
         requiredVal = parseFloat(requiredVal);
 
-        var multiplier = 1.05;
-
-        $("#data").text(requiredVal * multiplier);
+        var multiplier = 1.01;
+        var answer = requiredVal * multiplier;
+        $("#data").text(answer.toFixed(2));
     }});
 });
