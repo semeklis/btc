@@ -7,7 +7,7 @@ $(document).ready(function(){
         var requiredVal = cValues[0];
         requiredVal = parseFloat(requiredVal);
 
-        var multiplier = 1.01;
+        var multiplier = 1.05;
         var answer = requiredVal * multiplier;
         $("#data").text(answer.toFixed(2));
     }});
