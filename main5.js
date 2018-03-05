@@ -4,8 +4,7 @@ $(document).ready(function(){
         result = result.result;
         var data = result.XXBTZEUR;
         var cValues = data.c;
-        var requiredValue = cValues[0];
-        var requiredVal = requiredValue.toFixed(2);
+        var requiredVal = cValues[0].toFixed(2);
         requiredVal = parseFloat(requiredVal);
 
         var multiplier = 1.05;
